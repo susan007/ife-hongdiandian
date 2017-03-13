@@ -3,43 +3,38 @@ body{
     background-color: antiquewhite;
 }
 
-.title{
+/**标题栏**/
+header{
     background-color: #333;
-    width: 100%;
-    height: 40px;
-    line-height:40px;
-    text-align: center;
-    vertical-align: middle;
+    height: 60px;
 }
-.title img{
-    width: 100px;
-    height: 35px;
+header img{
     float: left;
+    height: 40px;
+    width: 138px;
+    padding-left: 40px;
+    padding-top: 10px;
 }
 
-ul#nav{
-    width:100%;
-    height:45px;
-    background:#333;
-    margin:0 auto
-
+.title li{
+    float: left;
+    padding-left:0px;
+    padding-right:16px;
+    margin:0px;
+    width: 80px;
 }
-ul#nav li{
-    display:inline;
-    height:60px
 
+.title li:hover{
+    background: #858585;
 }
-ul#nav li a{
-    display:inline-block;
-    padding:0 20px;
-    height:60px;
-    line-height:60px;
+
+.title a{
     color:#FFF;
-    font-family:"\5FAE\8F6F\96C5\9ED1";
-    font-size:16px
+    text-decoration:none;
+    font-size: 12px;
 }
-ul#nav li a:hover{
-    background:dimgrey;
+nav {
+    float: right;
 }
 
 .content{
@@ -48,7 +43,6 @@ ul#nav li a:hover{
     border: 1px solid dimgrey;
     background-color: #fff;
     box-shadow: 5px 5px 5px dimgrey;
-    text-align: center;
 }
 
 .content table{
@@ -58,6 +52,11 @@ ul#nav li a:hover{
 .content ol{
     list-style: none;
 }
+
+.suggest{
+    text-align: center;
+}
+
 .table-header{
     background-color: #333;
 }
@@ -76,8 +75,19 @@ img{
 }
 
 .submit{
-    width: 100%;
+    width: 60%;
     height: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     border-radius: 8px;
     background-color: #3355d0;
+}
+
+footer{
+    height: 60px;
+    line-height: 60px;
+    background-color: #333;
+    text-align: center;
 }
