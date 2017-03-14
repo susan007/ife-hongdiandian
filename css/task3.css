@@ -1,54 +1,28 @@
 
-/**绝对定位布局**/
-html,body{
-    margin: 0;
-    width: 100%;
-    height: auto;
-
-}
 /**主体box**/
 .mbody{
-    width: 100%;
-    height: 70%;
-    margin: 20px 20px;
     border: 2px solid #cccccc;
     background-color: #eee;
 }
 
-/**左右栏**/
-.sider-left ,
+.mbody,
+.content,
+.sider-left,
 .sider-right{
-    position: absolute;
-    margin-left: 20px;
-    margin-right: 20px;
-    top: 0;
-    height: auto;
-    margin-top: 100px;
-    border: 2px solid #cccccc;
-
-}
-/**侧边栏**/
-.sider-left{
-    left: 0;
-    width: 200px;
-    background-color: bisque;
-}
-.sider-right{
-   right: 0;
-    width: 120px;
-    background-color: bisque;
-    text-align: center;
-}
-/**中间内容区**/
-.content{
-    /**上下边距为0，左右边距210px **/
-    margin-left: 200px;
-    margin-right: 170px;
-    margin-top:100px;
-    margin-bottom: 0;
+    padding: 20px;
     border: 2px solid #ccc;
-    height:70%;
+    box-sizing: border-box;
+}
+
+.content,
+.sider-left,
+.sider-right{
     background-color: bisque;
+}
+
+.sider-left{
+    float: left;
+    width: 200px;
 }
 
 .sider-left img{
@@ -56,26 +30,105 @@ html,body{
     height: 80px;
 }
 
+.sider-left p{
+    position: absolute;
+    left: 160px;
+}
+
+.content{
+    width: auto;
+    margin-left: 240px;
+    margin-right: 160px;
+    text-indent: 2em;
+    overflow: auto;
+}
+
+.sider-right{
+    width: 120px;
+    float: right;
+}
+
 .sider-right img{
     width: 80px;
     height: 80px;
+    margin: 5px 5px 0 0;
+    text-align: center;
 }
 
-.sider-right ul{
-    padding:5px 0;
-    margin: 0;
-    list-style: none;
-    overflow: hidden;
-}
+@media screen and (max-width: 750px) {
+    .sider-left, .sider-right {
+        float: none;
+        margin-bottom: 20px;
+        width: auto;
+    }
 
-.sider-right ul li{
-    display: inline;
-    padding: 0;
+    .content {
+        margin: 0;
+    }
 }
 
 p{
     text-indent: 2rem;
 }
+
+
+
+/*!**左右栏**!*/
+/*.sider-left ,*/
+/*.sider-right{*/
+    /*position: absolute;*/
+    /*margin-left: 20px;*/
+    /*margin-right: 20px;*/
+    /*top: 0;*/
+    /*height: auto;*/
+    /*margin-top: 100px;*/
+    /*border: 2px solid #cccccc;*/
+
+/*}*/
+/*!**侧边栏**!*/
+/*.sider-left{*/
+    /*left: 0;*/
+    /*width: 200px;*/
+    /*background-color: bisque;*/
+/*}*/
+/*.sider-right{*/
+   /*right: 0;*/
+    /*width: 120px;*/
+    /*background-color: bisque;*/
+    /*text-align: center;*/
+/*}*/
+/*!**中间内容区**!*/
+/*.content{*/
+    /*!**上下边距为0，左右边距210px **!*/
+    /*margin-left: 200px;*/
+    /*margin-right: 170px;*/
+    /*margin-top:100px;*/
+    /*margin-bottom: 0;*/
+    /*border: 2px solid #ccc;*/
+    /*height:70%;*/
+    /*background-color: bisque;*/
+/*}*/
+
+
+
+/*.sider-right img{*/
+    /*width: 80px;*/
+    /*height: 80px;*/
+/*}*/
+
+/*.sider-right ul{*/
+    /*padding:5px 0;*/
+    /*margin: 0;*/
+    /*list-style: none;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*.sider-right ul li{*/
+    /*display: inline;*/
+    /*padding: 0;*/
+/*}*/
+
+
 
 
 
