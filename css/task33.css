@@ -1,0 +1,35 @@
+/**margin负值法**/
+html,body{
+    margin: 0;
+    height: 100%;
+}
+/**中间块**/
+#content{
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+/**内容区域**/
+#content #body{
+    margin: 0 210px;
+    background-color: #cc66cc;
+    height: 100%;
+
+}
+
+#sider-left,#sider-right{
+    width: 200px;
+    height: 100%;
+    float: left;
+
+}
+
+#sider-left{
+    margin-left: -100%;
+    background-color: yellowgreen;
+}
+
+#sider-right{
+    margin-left: -200px;
+    background-color: yellowgreen;
+}
