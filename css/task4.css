@@ -1,33 +1,28 @@
-body{
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 100%;
-    text-align: center;
-}
-
+/**一种居中的写法**/
 .content{
     position: absolute;
-    width: 500px;
-    height:500px;
-    background-color: #858585;
-    border: 2px solid darkblue;
+    width: 400px;
+    height: 200px;
+    background-color: #ccc;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -100px;
 }
 
-.round{
+.left-top{
     position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: #cc66cc;
-    border: 2px solid coral;
-    border-radius: 180px;
+    width:50px;
+    height: 50px;
+    background: yellow;
+    border-bottom-right-radius: 50px;
 }
-
-.round.left-top{
-    float: left;
-    top: 0;
-}
-.round.right-bottom{
-    float: right;
+.right-bottom{
+    position: absolute;
+    right:0;
     bottom: 0;
+    width:50px;
+    height: 50px;
+    background: yellow;
+    border-top-left-radius:50px;
 }
